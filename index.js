@@ -1,6 +1,6 @@
 function loginClicked(musickitInstance) {
     musickitInstance.authorize();
-    const div = document.getElementById('example');
+    const div = document.getElementById('content');
     let htmlString = "";
     htmlString += "<label for='year'>Enter festival year (blank for most recent):</label><br>";
     htmlString += "<input type='text' id='year' value='2022'><br>";
