@@ -70,9 +70,10 @@ async function getTopArtists(musickitInstance, year=2022) {
     console.log(weightedArtistAppearances);
     return Array.from(weightedArtistAppearances.keys()).slice(0,36);
 
+    // TODOS:
     // Now we have the top up to 36 artists, based on our proprietary scoring system and discarding multiple-artist songs.
-    // Let's send this array as an argument in an API call to a flask backend that will use PIL to generate the image.
-    // Then, we'll send the image back to the frontend and render it on the webpage.
+    // Next, we'll use canvas to draw the artist names in a festival-lineup format onto the base image at default_background.png
+    // Then we'll present that image on the screen along with a button that allows the user to download the image
     // Also, lets have it all hidden behind a button "Get your lineup!" that once you click it then it triggers
     // Apple Music authorization and everything after that.
     // Let's also add the abililty (right after authorization) to input the year you want your lineup for and then
